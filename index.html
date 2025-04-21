@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Toggle menu
     menuToggle.addEventListener('click', function() {
+        console.log('Tombol diklik!');
         mainNav.classList.toggle('active');
         overlay.classList.toggle('active');
         this.setAttribute('aria-expanded', mainNav.classList.contains('active'));
