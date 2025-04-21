@@ -94,7 +94,7 @@
     
     <script>
 
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.getElementById('main-nav');
     const overlay = document.createElement('div');
@@ -102,11 +102,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(overlay);
     
     // Toggle menu
-    menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', function() {
         console.log('Tombol diklik!');
         mainNav.classList.toggle('active');
         overlay.classList.toggle('active');
-        this.setAttribute('aria-expanded', mainNav.classList.contains('active'));
+        this.setAttribute('aria-expanded',   mainNav.classList.contains('active'));
     });
     
     // Tutup menu saat klik overlay
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Tutup menu saat klik link (opsional)
-    document.querySelectorAll('#main-nav a').forEach(link => {
+    document.querySelectorAll('#main-nav ul li a').forEach(link => {
         link.addEventListener('click', function() {
             mainNav.classList.remove('active');
             overlay.classList.remove('active');
