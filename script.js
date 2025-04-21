@@ -4,12 +4,12 @@
         });
         
         // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="#main-nav a"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
+                if (targetId === 'aria-expanded') return;
                 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
