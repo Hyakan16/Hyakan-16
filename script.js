@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Tutup menu saat klik link (opsional)
-    document.querySelectorAll('#main-nav a').forEach(link => {
+    document.querySelectorAll('#main-nav ul li a').forEach(link => {
         link.addEventListener('click', function() {
             mainNav.classList.remove('active');
             overlay.classList.remove('active');
