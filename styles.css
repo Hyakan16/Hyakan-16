@@ -65,6 +65,11 @@ nav ul li a:hover {
     cursor: pointer;
     padding: 10px;
     z-index: 1001;
+     transition: transform 0.3s ease;
+}
+
+.menu-toggle.is-active {
+    transform: rotate(90deg);
 }
 
 /* Mobile Styles */
@@ -113,7 +118,6 @@ nav ul li a:hover {
     .overlay.active {
         display: block;
     }
-}
 
 /* Hero Section */
 .hero {
