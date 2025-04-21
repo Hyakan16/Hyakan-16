@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(overlay);
     
     // Toggle menu
-    menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', function() {
+        console.log('Tombol diklik!');
+        console.log(mainNav.classList);
         mainNav.classList.toggle('active');
         overlay.classList.toggle('active');
         this.setAttribute('aria-expanded', mainNav.classList.contains('active'));
