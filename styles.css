@@ -65,7 +65,7 @@ nav ul li a:hover {
     cursor: pointer;
     padding: 10px;
     z-index: 1001;
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .menu-toggle.is-active {
@@ -284,4 +284,17 @@ footer {
         margin: 10px 0;
     }
     
-
+  .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 48px;
+            }
+            
+            .hero h2 {
+                font-size: 22px;
+            }
