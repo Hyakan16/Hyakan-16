@@ -101,6 +101,8 @@ nav ul li a:hover {
     overflow: hidden;
     background: url('img/bg4.jpg') no-repeat center center;
     background-size: cover;
+    /*ketika di scroll background nya gk ngikut ke bawah*/
+    background-attachment: fixed;
     color: #fff;
 }
 
