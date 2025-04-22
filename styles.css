@@ -54,6 +54,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #B771E5;
+    background-attachment: fixed;
 }
 
 .menu-toggle {
