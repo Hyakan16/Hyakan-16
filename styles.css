@@ -67,10 +67,12 @@ nav ul li a:hover {
     background: #000;
     padding: 10px;
     border-radius: 4px;
+    transition: transform 0.3s ease;
 }
 
 .menu-toggle.is-active {
     color: #B771E5;
+    transform: rotate(90deg);
 }
 
 /* Overlay Styles */
